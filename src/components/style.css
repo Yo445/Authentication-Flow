@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #edf1f4;
+}
+
+.login {
+  position: relative;
+  width: 380px;
+  padding: 80px 50px 50px;
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 20px #fffb;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login form {
+  position: relative;
+  width: 100%;
+}
+
+.login form h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  line-height: 0.9em;
+}
+
+.login form h2 span {
+  font-weight: 300;
+  font-size: 0.65em;
+}
+
+.login form .inputBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.login form .inputBox input 
+{
+    border: none;
+    outline:none;
+    background:transparent;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+
+.login form .inputBox input[type="text"],
+.login form .inputBox input[type="password"]
+{
+width: 100%;
+padding: 15px 20px;
+margin-bottom: 20px;
+box-shadow:inset 5px 5px 10px rgba(0,0,0,0.1),
+inset -5px -5px 10px #fff;
+}
+
+
+
+
+.login form .inputBox .i {
+  position: absolute;
+  right: 15px; /* Adjusted right position */
+  top: 40%; /* Adjusted top position */
+  transform: translateY(-50%); /* Center vertically */
+}
+
+.login form .inputBox div {
+  position: relative;
+}
+
+
+
+
+
+.login form label {
+  display: flex;
+  align-items: center;
+}
+
+.login form .inputBox input[type="checkbox"]
+{
+margin-right: 5px;
+
+}
+
+
+.login .fingerprint{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: large;
+  gap: 15px;
+  cursor: pointer;
+
+}
+.login .fingerprint .fingerprintBox{
+  box-shadow:inset -5px -3px 30px rgba(0,0,0,0.1),
+  inset 5px 5px 30px #fff;
+  padding: 15px 20px 10px;
+  border-radius: 25px;
+  background: gray;
+  width: 150px;
+  margin: auto;
+  text-align: center;
+
+}
+
+.login .fingerprint .fingerprintBox .identity{
+font-size:22px;
+padding-right: 6px;
+}
+
+
+
+.logout {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.logout-btn:hover {
+  background-color: #ff6666;
+}
